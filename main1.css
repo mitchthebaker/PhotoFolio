@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Maven+Pro|Montserrat|Poiret+One|Questrial|Righteous|Sirin+Stencil|Supermercado+One');
+ 
+html {
+	margin: 0;
+}
+
+.cb-slideshow, .cb-slideshow:after {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+	list-style-type: none;
+}
+
+.cb-slideshow:after {
+	content: '';
+	
+}
+
+.cb-slideshow li span {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s ease-out infinite 0; 
+}
+
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding: 0;
+    line-height: 200px; 
+}
+
+.cb-slideshow li:nth-child(1) span {
+	background-image: url('public/images/cali/IMG_3075.jpg');
+}
+
+.cb-slideshow li:nth-child(2) span {
+	background-image: url('public/images/France/IMG_4610.jpg');
+	animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+	background-image: url('public/images/cali/IMG_3332.jpg');
+	animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+	background-image: url('public/images/cali/IMG_2593.jpg');
+	animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) span {
+	background-image: url('public/images/cali/IMG_1957.jpg');
+	animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) span {
+	background-image: url('public/images/Roma/used/IMG_4740.jpg');
+	animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    4% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    24% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    4% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/*
+body {
+	width: 100%;
+	height: 100%;
+	background: url('public/images/France/Nice/IMG_4542.JPG') no-repeat 50% 50% fixed;
+  	background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	margin: 0;
+}
+*/
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.navBarOptions {
+	position: fixed;
+	background-color: #EEEBEB;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	z-index: 4;
+	padding-top: 60px;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	visibility: hidden;
+	transition: linear 0.4s;
+}
+
+.showNavBar {
+	opacity: 1;
+	visibility: visible;
+}
+
+.option-a {
+	color: white;
+	display: block;
+	font-size: 30px;
+	font-family: 'Questrial';
+	padding: 10px;
+	margin: 10px;
+	text-decoration: none;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+	z-index: 10;
+}
+
+#top, #bottom, #left, #right {
+	background: white;
+	position: fixed;
+	z-index: 3;
+}
+
+#left, #right {
+	top: 0; 
+	bottom: 0;
+	width: 10px;
+}
+	
+#left { 
+	left: 0; 
+}
+	
+#right { 
+	right: 0; 
+}
+		
+#top, #bottom {
+	left: 0; 
+	right: 0;
+	height: 10px;
+}
+	
+#top { 
+	top: 0; 
+}
+	
+#bottom { 
+	bottom: 0; 
+}
+
+
+.header-cont {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	top: 0px;
+	background-color: transparent;
+	z-index: 5;
+	/*
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+	*/
+}
+
+.headerTitle-a {
+	margin: 20px;
+	margin-right: auto;
+	text-decoration: none;
+	z-index: 5;
+}
+
+.headerTitle {
+	color: white;
+	font-size: 25px;
+	font-weight: 1000;
+	/* border-bottom: solid white 2px; */
+	font-family: 'Supermercado One', 'Montserrat';
+	z-index: 5;
+}
+
+.sideNavBar {
+	text-align: center;
+	margin-right: 15px;
+	z-index: 5;
+}
+
+.dropbtn
+{
+	background-color: transparent;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	border: none;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.hamburger {
+	margin-right: 10px;
+}
+
+
+
