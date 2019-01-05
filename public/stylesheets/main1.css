@@ -56,31 +56,31 @@ html {
 }
 
 .cb-slideshow li:nth-child(1) span {
-	background-image: url('public/images/cali/IMG_3075.jpg');
+	background-image: url('/images/cali/comp/IMG_3075.jpg');
 }
 
 .cb-slideshow li:nth-child(2) span {
-	background-image: url('public/images/France/IMG_4610.jpg');
+	background-image: url('/images/France/comp/IMG_4610.jpg');
 	animation-delay: 6s;
 }
 
 .cb-slideshow li:nth-child(3) span {
-	background-image: url('public/images/cali/IMG_3332.jpg');
+	background-image: url('/images/cali/comp/IMG_3332.jpg');
 	animation-delay: 12s;
 }
 
 .cb-slideshow li:nth-child(4) span {
-	background-image: url('public/images/cali/IMG_2593.jpg');
+	background-image: url('/images/cali/comp/IMG_2593.jpg');
 	animation-delay: 18s;
 }
 
 .cb-slideshow li:nth-child(5) span {
-	background-image: url('public/images/cali/IMG_1957.jpg');
+	background-image: url('/images/cali/comp/IMG_1957.jpg');
 	animation-delay: 24s;
 }
 
 .cb-slideshow li:nth-child(6) span {
-	background-image: url('public/images/Roma/used/IMG_4740.jpg');
+	background-image: url('/images/Roma/comp/IMG_4740.jpg');
 	animation-delay: 30s;
 }
 
