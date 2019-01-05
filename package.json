@@ -1,0 +1,32 @@
+{
+  "name": "photoportfolio",
+  "version": "1.0.0",
+  "description": "Photography portfolio for Mitchel Baker ",
+  "main": "indexFolio.js",
+  "scripts": {
+    "start": "node indexFolio.js",
+    "test": "testFolio.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchthebaker/PhotoFolio.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Mitchel Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitchthebaker/PhotoFolio/issues"
+  },
+  "homepage": "https://github.com/mitchthebaker/PhotoFolio#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {}
+}
