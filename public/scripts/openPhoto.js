@@ -85,7 +85,12 @@ const openEvent = function() {
  * innerHTML is set to the <img> tag and all of it's attributes within the 
  * current 'el' that was clicked by the user. 
  */
-const getCellId = function() {
+const getCellId = function(event) {
+	var eventId = event.target.parentElement.getAttribute('id').toString();
+	var newEventId = eventId.substring(4);
+	overlayOptions.currentIndex = newEventId - 1;
+	overlayOptions.currentId = document.querySelector('#' + event.target.parentElement.id + '');
+	overlayOptions.currentPic.innerHTML = event.target.outerHTML;
 	overlayOptions.cellArrayToArray().forEach(function(el) {
 		el.addEventListener('click', function() {
 			console.log(overlayOptions.cellArrayToArray().indexOf(el));

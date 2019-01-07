@@ -105,7 +105,7 @@ body {
 	z-index: 1;
 }
 
-/* CSS for cali.html page 
+/* CSS for all .ejs pages 
  *
  */
 
@@ -139,9 +139,9 @@ body {
 #currentPic img {
 	margin: auto;
 	width: 100%;
-	max-width: 350px;
 	max-height: 100%; 
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+	flex: 0 0 60%;
 }
 
 .overlay {
@@ -179,18 +179,20 @@ body {
 	color: white;
 }
 
+#currentPic {
+	margin-top: 30px;
+}
+
 #previousPic {
 	color: white;
 	font-size: 50px;
 	margin: 20px;
-	transition: linear 0.3s;
 }
 
 #nextPic {
 	color: white;
 	font-size: 50px;
 	margin: 20px;
-	transition: linear 0.3s;
 }
 
 .footer-cont {
@@ -286,13 +288,12 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
 .contact-explanation {
-	margin: 20px;
+	margin: 40px;
 	margin-bottom: 340px;
 }
 
@@ -317,8 +318,8 @@ body {
 #cellAbout img {
 	margin: auto;
 	width: 100%;
-	max-width: 600px;
-	min-width: 345px;
+	max-width: 800px;
+	min-width: 350px;
 	max-height: 100%; 
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
@@ -333,6 +334,7 @@ body {
 	padding: 3px;
 	text-align: center;
 }
+
 .about-h3 {
 	width: 65%;
 	color: #BBBBBB;
@@ -358,6 +360,67 @@ body {
 .copyright-div {
 	text-align: center;
 }
+
+/* iPhone resolution or less */
+@media only screen and (max-device-width: 480px) {
+
+	#currentPic img {
+		max-width: 350px;
+	}
+}
+
+/* Default iPad resolution */
+@media only screen and (device-width: 768px) {
+
+	#currentPic img {
+		max-width: 600px;
+	}
+}
+
+/* iPad resolutions for portrait/landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+	#currentPic img {
+		max-width: 700px;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+	#currentPic img {
+		max-width: 700px;
+	}
+}
+
+/* Resolutions larger than 960px */
+@media only screen and (min-width:960px) {
+
+	#currentPic img {
+		max-width: 1000px;
+	}
+}
+
+/* Resolutions larger than 1440px */
+@media only screen and (min-width:1440px) {
+       
+    #currentPic img {
+		max-width: 1200px;
+	}
+}
+
+/* Resolutions larger than 2000px */
+@media only screen and (min-width:2000px) {
+       
+	#currentPic img {
+		max-width: 1500px;
+	}
+}
+
+
+
+
+
+
 
 /*
 a.image-container {
