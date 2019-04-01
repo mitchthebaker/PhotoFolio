@@ -1,7 +1,7 @@
 # Welcome to PhotoFolio.. a repo dedicated to the photography portfolio PortoPhoto.
 
 Visit the homepage of the website here:
-https://portophoto.herokuapp.com/main
+http://biconvex.herokuapp.com/main
 
 ## View photos are from all over the world:
 
